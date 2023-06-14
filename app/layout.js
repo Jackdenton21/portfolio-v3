@@ -11,7 +11,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>{children}
+      
+      <footer className="text-center py-4">
+        <p>&copy; {new Date().getFullYear()} Developed using Next.JS and TailWind CSS. Deployed with Vercel. </p>
+      </footer>
+
+      </body>
+
     </html>
   )
 }

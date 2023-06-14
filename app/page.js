@@ -1,4 +1,5 @@
-import Image from 'next/image';
+import Navbar from '/components/navbar';
+
 
 export default function Home() {
 
@@ -6,52 +7,8 @@ export default function Home() {
 
 
     <div className="bg-gray-100 min-h-screen">
-      <nav className="bg-white shadow">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16">
-            <div className="flex">
-              <div className="flex-shrink-0 flex items-center">
-                {/* Your logo or brand image */}
-                <Image
-                  src="/images/blacklogo.png"
-                  alt="Logo"
-                  width={40}
-                  height={40}
-                />
-              </div>
-              <div className="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
-                {/* Navigation links */}
-                <a
-                  href="/about"
-                  className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm"
-                >
-                  About
-                </a>
-                <a
-                  href="/contact"
-                  className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm"
-                >
-                  Contact
-                </a>
-                <a
-                  href="/projects"
-                  className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm"
-                >
-                  Projects
-                </a>
-                <a
-                  href="/experience"
-                  className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm"
-                >
-                  Experience
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navbar/>
       
-
       <header className="bg-white py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -60,8 +17,6 @@ export default function Home() {
           </div>
         </div>
       </header>
-
-
 
     </div>
   );

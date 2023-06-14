@@ -1,8 +1,13 @@
 import React from 'react';
+import Navbar from '/components/navbar-home-option';
 
 export default function Home() {
   return (
-    <div className="bg-gray-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+    
+    <div className="bg-gray-100 min-h-screen">
+    <Navbar/>
+    <div className="py-12 px-4 sm:px-6 lg:px-8">
+
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">About Me</h1>
 
@@ -52,6 +57,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
