@@ -7,12 +7,14 @@ export default function Navbar() {
         <div className="flex justify-center sm:justify-between  h-16">  
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
-              <Image
+            <a href="/">
+            <Image
                 src="/images/blacklogo.png"
                 alt="Logo"
                 width={40}
                 height={40}
               />
+              </a>
             </div>
             <div className="-my-px ml-6 flex space-x-4 sm:space-x-8">
               {/* Navigation links */}

@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import Navbar from '/components/navbar-home-option';
+import Navbar from '/components/navbar';
 
 const WorkExperiencePage = () => {
   const fadeInVariants = {
