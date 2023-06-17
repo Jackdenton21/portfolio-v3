@@ -14,7 +14,7 @@ export default function Navbar() {
                 height={40}
               />
             </div>
-            <div className="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
+            <div className="sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
               {/* Navigation links */}
               <a
                 href="/"
