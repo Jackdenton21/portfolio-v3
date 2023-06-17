@@ -14,7 +14,7 @@ export default function Navbar() {
                 height={40}
               />
             </div>
-            <div className="-my-px ml-6 flex space-x-8">
+            <div className="-my-px ml-6 flex space-x-4 sm:space-x-8">
               {/* Navigation links */}
               <a
                 href="/about"

@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Navbar() {
   return (
-    <nav className="bg-white shadow mt-0">
+    <nav className="bg-white shadow mt-0 style={{ marginTop: 0 }}">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex justify-center sm:justify-between  h-16">  
         <div className="flex">
@@ -14,7 +14,7 @@ export default function Navbar() {
               height={40}
             />
           </div>
-          <div className="-my-px ml-6 flex space-x-8">
+          <div className="-my-px ml-6 flex  space-x-4 sm:space-x-8">
               {/* Navigation links */}
               <a
                 href="/"
