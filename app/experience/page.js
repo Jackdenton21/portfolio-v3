@@ -23,7 +23,7 @@ const WorkExperiencePage = () => {
       >
         <div className="container mx-auto px-4 text-center">
           <motion.h1
-            className="text-3xl font-bold"
+            className="text-xl font-bold"
             layoutId="pageTitle"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ const WorkExperiencePage = () => {
       className="w-full h-auto object-cover"
     />
     <motion.h2
-      className="text-xl font-bold mb-2 text-center"
+      className="text-xl mb-2 text-center"
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.6, delay: 0.4 }}
@@ -94,7 +94,7 @@ const WorkExperiencePage = () => {
       className="w-20 h-20 object-cover inline-block"
     />
     <motion.h2
-      className="text-xl font-bold mb-2 text-center"
+      className="text-xl mb-2 text-center"
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.6, delay: 0.4 }}
@@ -138,7 +138,7 @@ Utilized GitHub for effective version control and project management, ensuring t
       style={{ marginTop: '-2rem' }}
     />
     <motion.h2
-      className="text-xl font-bold mb-2 text-center"
+      className="text-xl mb-2 text-center"
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.6, delay: 0.4 }}

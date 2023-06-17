@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>{children}
       
-      <footer className="text-center py-4">
+      <footer className="text-center py-4 text-sm">
         <p>&copy; {new Date().getFullYear()} Developed using Next.JS and TailWind CSS. Deployed with Vercel. </p>
       </footer>
 
