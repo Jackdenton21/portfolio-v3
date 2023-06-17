@@ -2,9 +2,9 @@ import Image from 'next/image';
 
 export default function Navbar() {
   return (
-    <nav className="bg-white shadow mt-4 sm:mt-0">
+    <nav className="bg-white shadow mt-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex sm:justify-center md:justify-between lg:justify-between xl:justify-between 2xl:justify-between h-16">  
+        <div className="flex justify-center sm:justify-between  h-16">  
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
               <Image
@@ -14,7 +14,7 @@ export default function Navbar() {
                 height={40}
               />
             </div>
-            <div className="sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
+            <div className="-my-px ml-6 flex space-x-8">
               {/* Navigation links */}
               <a
                 href="/about"
