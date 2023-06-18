@@ -1,27 +1,85 @@
+
+"use client";
+
 import React from 'react';
 import Navbar from '/components/navbar';
+import { motion } from 'framer-motion';
 
 export default function Home() {
+  const fadeInVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
+
   return (
     <div className="bg-gray-100 min-h-screen">
       <Navbar />
+
+      <motion.header
+        className="bg-gray-200 py-8"
+        initial="hidden"
+        animate="visible"
+        variants={fadeInVariants}
+        transition={{ duration: 0.6 }}
+      >
+        <div className="container mx-auto px-4 text-center">
+          <motion.h1
+            className="text-xl font-bold"
+            layoutId="pageTitle"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            About Me
+          </motion.h1>
+        </div>
+      </motion.header>
+
       <div className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">About Me</h1>
+          <motion.div
+            className="bg-white shadow-md rounded-md p-6"
+            variants={fadeInVariants}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <motion.p
+              className="text-gray-700 mb-4"
+              variants={fadeInVariants}
+              initial="hidden"
+              animate="visible"
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm going into my fourth year studying Computer Science at McGill University, where I've gained a solid foundation in software development and problem-solving. I have front-end and back-end experience, working with tools and technologies across various personal projects, internships, and coursework. I'm constantly seeking new opportunities to expand my knowledge and stay up-to-date with the latest advancements in the field, ensuring that I can deliver cutting-edge solutions to meet the evolving needs of users and businesses.
+            </motion.p>
+          </motion.div>
 
-          <div className="bg-white shadow-md rounded-md p-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">Education</h2>
-            <p className="text-gray-700 mb-4">
-              I study Computer Science at McGill University. Some relevant courses I have taken include Algorithms and
-              Data Structures, Software Design Patterns, Computer Systems, Functional Programming, Concurrent Systems,
-              Information Management, and High Tech Venture Creation.
-            </p>
-          </div>
+          <motion.div
+            className="bg-white shadow-md rounded-md p-6 mt-6"
+            variants={fadeInVariants}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
 
-          <div className="bg-white shadow-md rounded-md p-6 mt-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">Technical Skills</h2>
+
+          <motion.h2
+            className="text-xl font-semibold text-gray-800 mb-4"
+            layoutId="pageTitle"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
+          >
+            Tech I've Worked With
+          </motion.h2>
             <div className="grid grid-cols-2 gap-4">
-              <div>
+              <motion.div
+                variants={fadeInVariants}
+                initial="hidden"
+                animate="visible"
+                transition={{ duration: 0.6, delay: 0.8 }}
+              >
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">Languages</h3>
                 <ul className="list-disc list-inside">
                   <li className="text-gray-700">Python</li>
@@ -32,16 +90,26 @@ export default function Home() {
                   <li className="text-gray-700">HTML/CSS</li>
                   <li className="text-gray-700">JavaScript</li>
                 </ul>
-              </div>
-              <div>
+              </motion.div>
+              <motion.div
+                variants={fadeInVariants}
+                initial="hidden"
+                animate="visible"
+                transition={{ duration: 0.6, delay: 1 }}
+                >
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">Frameworks</h3>
                 <ul className="list-disc list-inside">
                   <li className="text-gray-700">Expo</li>
                   <li className="text-gray-700">Next.js</li>
                   <li className="text-gray-700">Flask</li>
                 </ul>
-              </div>
-              <div>
+              </motion.div>
+              <motion.div
+                variants={fadeInVariants}
+                initial="hidden"
+                animate="visible"
+                transition={{ duration: 0.6, delay: 1.2 }}
+              >
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">Developer Tools</h3>
                 <ul className="list-disc list-inside">
                   <li className="text-gray-700">GitHub</li>
@@ -49,18 +117,27 @@ export default function Home() {
                   <li className="text-gray-700">VS Code</li>
                   <li className="text-gray-700">IntelliJ</li>
                 </ul>
-              </div>
-              <div>
+              </motion.div>
+              <motion.div
+                variants={fadeInVariants}
+                initial="hidden"
+                animate="visible"
+                transition={{ duration: 0.6, delay: 1.4 }}
+               >
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">Libraries</h3>
                 <ul className="list-disc list-inside">
                   <li className="text-gray-700">NumPy</li>
                   <li className="text-gray-700">Matplotlib</li>
                 </ul>
-              </div>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
   );
 }
+
+
+
+
