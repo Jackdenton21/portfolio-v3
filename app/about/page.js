@@ -51,7 +51,7 @@ export default function Home() {
               animate="visible"
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm going into my fourth year studying Computer Science at McGill University, where I've gained a solid foundation in software development and problem-solving. I have front-end and back-end experience, working with tools and technologies across various personal projects, internships, and coursework. I'm constantly seeking new opportunities to expand my knowledge and stay up-to-date with the latest advancements in the field, ensuring that I can deliver cutting-edge solutions to meet the evolving needs of users and businesses.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I&apos;m going into my fourth year studying Computer Science at McGill University, where I&apos;ve gained a solid foundation in software development and problem-solving. I have front-end and back-end experience, working with tools and technologies across various personal projects, internships, and coursework. I&apos;m constantly seeking new opportunities to expand my knowledge and stay up-to-date with the latest advancements in the field, ensuring that I can deliver cutting-edge solutions to meet the evolving needs of users and businesses.
             </motion.p>
           </motion.div>
 
@@ -71,7 +71,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7 }}
           >
-            Tech I've Worked With
+            Tech I&apos;ve Worked With
           </motion.h2>
             <div className="grid grid-cols-2 gap-4">
               <motion.div
