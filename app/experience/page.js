@@ -40,8 +40,8 @@ const WorkExperiencePage = () => {
         variants={fadeInVariants}
         transition={{ duration: 0.6, delay: 0.4 }}
       >
-        <section className="bg-white rounded-lg shadow-lg p-6 mb-8 flex">
-          <div className="w-1/4 max-w-full">
+        <section className="bg-white rounded-lg shadow-lg p-6 mb-8 flex items-center">
+          <div className="w-1/4 max-w-full items-center">
             <img
               src="/images/twalmart.png"
               alt="Company A Logo"
@@ -71,7 +71,7 @@ const WorkExperiencePage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
-                Currently building a module for the Supply Chain Tracker API that will store data on the unit level for all prescription pharmacy items as required by the Supply Chain Safety Act that comes into place
+                Currently building a module for the Supply Chain Tracker API that will store data on the unit level for all prescription pharmacy items as required by the Supply Chain Safety Act that comes into place Nov. 2023.
                 </motion.li>
 
                 <motion.li
@@ -94,7 +94,7 @@ const WorkExperiencePage = () => {
           </div>
         </section>
         <section className="bg-white rounded-lg shadow-lg p-6 mb-8 flex">
-          <div className="w-1/4 text-center max-w-full">
+          <div className="w-1/4 text-center max-w-full items-center">
             <img
               src="/images/tfg.png"
               alt="Company A Logo"
@@ -124,7 +124,7 @@ const WorkExperiencePage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
-                Designed and implemented a full-stack web application using Next.js, AWS, and Flask to display real-time data for Tech For Good’s deployed networks.
+                Designed and implemented a full-stack web application using Next.js, AWS, and Flask to display real-time statistics for Tech For Good’s deployed networks.
               </motion.li>
               <motion.li
                 initial={{ opacity: 0, y: 20 }}
@@ -146,18 +146,21 @@ const WorkExperiencePage = () => {
           </div>
         </section>
         <section className="bg-white rounded-lg shadow-lg p-6 mb-8 flex">
-          <div className="w-1/4 text-center max-w-full">
+          <div className="w-1/4 text-center max-w-full items-center">
             <img
               src="/images/d5.png"
               alt="Company A Logo"
               className="w-60 h-40 inline-block object-contain"
               style={{ marginTop: '-2rem' }}
+
               />
               <motion.h2
                 className="text-xl mb-2 text-center"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
+                style={{ marginTop: '-1rem' }}
+
               >
                 Droga5
               </motion.h2>
