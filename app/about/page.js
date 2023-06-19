@@ -4,6 +4,12 @@ import Navbar from '/components/navbar';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 export default function Home() {
+
+  const paragraphVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   const fadeInVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
@@ -73,6 +79,55 @@ export default function Home() {
           </motion.h1>
         </div>
       </motion.header>
+
+
+
+      <div className="text-gray-600 text-l font-bold mb-4 py-8 px-8 sm:px-12 md:px-16 lg:px-20 xl:px-50 2xl:px-50">
+      <motion.p
+        initial="hidden"
+        animate="visible"
+        variants={paragraphVariants}
+        transition={{ duration: 0.5}}
+        className='mb-5'
+      >
+        &emsp;&emsp;I&rsquo;m currently heading into my fourth year pursuing a Computer Science degree at McGill University.
+         I&rsquo;ve had the opportunity to work at diverse organizations, ranging from an
+         &nbsp;<a href="https://droga5.com" className='hover:text-gray-400 border-b-2 border-gray-400 mb-1'>
+      industry-leading advertising agency</a>&nbsp;
+      to a &nbsp;
+      <a href="https://www.techforgoodinc.org" className='hover:text-gray-400 border-b-2 border-gray-400 mb-1'>
+      startup run by college students</a> 
+      , and even the &nbsp;
+      <a href="https://tech.walmart.com/content/walmart-global-tech/en_us/about.html" className='hover:text-gray-400 border-b-2 border-gray-400 mb-1'>
+      Fortune #1.</a>
+      </motion.p>
+      <motion.p
+        initial="hidden"
+        animate="visible"
+        variants={paragraphVariants}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className='mb-5'
+
+      >
+      &emsp;&emsp;These experiences have allowed me to gain valuable insights and skills across different domains. This versatility has enabled me to tackle various aspects of software development. For more details take a look at my &nbsp;
+             
+      <a href="/projects" className='hover:text-gray-400 border-b-2 border-gray-400 mb-1'>
+      projects</a>.
+      </motion.p>
+      <motion.p
+        initial="hidden"
+        animate="visible"
+        variants={paragraphVariants}
+        transition={{ duration: 0.5, delay: 0.4 }}
+        className='mb-5'
+
+      >
+        &emsp;&emsp;Check out some of the technology I&rsquo;ve worked with recently.
+      </motion.p>
+    </div>
+
+
+
       <div>
         {sections.map((section, index) => (
           <section key={index} className="mt-8">
@@ -83,7 +138,7 @@ export default function Home() {
                {section.images.map((image, index) => (
                  <div key={index} className="image-wrapper">
                    <div className="image-container">
-                     <Image src={image} alt="Image" layout="fill" objectFit="contain" />
+                     <Image  loading="eager" src={image} alt="Image" layout="fill" objectFit="contain" />
                    </div>
                  </div>
                ))}
