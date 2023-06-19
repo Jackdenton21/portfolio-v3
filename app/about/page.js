@@ -91,12 +91,12 @@ export default function Home() {
         className='mb-5'
       >
         &emsp;&emsp;I&rsquo;m currently heading into my fourth year pursuing a Computer Science degree at McGill University.
-         I&rsquo;ve had the opportunity to work at diverse organizations, ranging from an
+         I&rsquo;ve had the opportunity to work at diverse set of organizations, ranging from an
          &nbsp;<a href="https://droga5.com" className='hover:text-gray-400 border-b-2 border-gray-400 mb-1'>
       industry-leading advertising agency</a>&nbsp;
       to a &nbsp;
       <a href="https://www.techforgoodinc.org" className='hover:text-gray-400 border-b-2 border-gray-400 mb-1'>
-      startup run by college students</a> 
+      fast-paced startup </a> 
       , and even the &nbsp;
       <a href="https://tech.walmart.com/content/walmart-global-tech/en_us/about.html" className='hover:text-gray-400 border-b-2 border-gray-400 mb-1'>
       Fortune #1.</a>
@@ -112,18 +112,9 @@ export default function Home() {
       &emsp;&emsp;These experiences have allowed me to gain valuable insights and skills across different domains. This versatility has enabled me to tackle various aspects of software development. For more details take a look at my &nbsp;
              
       <a href="/projects" className='hover:text-gray-400 border-b-2 border-gray-400 mb-1'>
-      projects</a>.
+      projects</a>. Below are some of the technologies I&rsquo;ve worked with recently.
       </motion.p>
-      <motion.p
-        initial="hidden"
-        animate="visible"
-        variants={paragraphVariants}
-        transition={{ duration: 0.5, delay: 0.4 }}
-        className='mb-5'
-
-      >
-        &emsp;&emsp;Check out some of the technology I&rsquo;ve worked with recently.
-      </motion.p>
+      
     </div>
 
 
@@ -138,7 +129,7 @@ export default function Home() {
                {section.images.map((image, index) => (
                  <div key={index} className="image-wrapper">
                    <div className="image-container">
-                     <Image  loading="eager" src={image} alt="Image" layout="fill" objectFit="contain" />
+                     <Image src={image} alt="Image" layout="fill" objectFit="contain" />
                    </div>
                  </div>
                ))}
