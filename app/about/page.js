@@ -1,15 +1,41 @@
-
 "use client";
-
 import React from 'react';
 import Navbar from '/components/navbar';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Home() {
   const fadeInVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
   };
+
+  const sections = [
+    {
+      title: 'Languages',
+      images: [
+        '/images/tech/python.png',
+        '/images/tech/java.png',
+        '/images/tech/ocaml.png',
+        '/images/tech/c.png',
+        '/images/tech/html.png',
+        '/images/tech/js.png',
+        '/images/tech/css.png',
+      ],
+    },
+    {
+      title: 'Frameworks',
+      images: [
+        '/images/tech/springboot.png',
+        '/images/tech/nextjs.png',
+        '/images/tech/expo.png',
+        '/images/tech/pngwing.com.png',
+        '/images/tech/flask.png',
+
+      ],
+    },
+    // Add more sections as needed
+  ];
 
   return (
     <div className="bg-gray-100 min-h-screen">
@@ -35,109 +61,57 @@ export default function Home() {
         </div>
       </motion.header>
 
-      <div className="py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <motion.div
-            className="bg-white shadow-md rounded-md p-6"
-            variants={fadeInVariants}
-            initial="hidden"
-            animate="visible"
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            <motion.p
-              className="text-gray-700 mb-4"
-              variants={fadeInVariants}
-              initial="hidden"
-              animate="visible"
-              transition={{ duration: 0.6, delay: 0.6 }}
+      <div>
+        {sections.map((section, index) => (
+          <section key={index} className="mt-8">
+            <h2 className="text-center mb-10 font-bold">{section.title}</h2>
+            <div
+              className={`image-grid ${section.title === 'Frameworks' ? 'frameworks-grid' : ''}`}
             >
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I&apos;m going into my fourth year studying Computer Science at McGill University, where I&apos;ve gained a solid foundation in software development and problem-solving. I have front-end and back-end experience, working with tools and technologies across various personal projects, internships, and coursework. I&apos;m constantly seeking new opportunities to expand my knowledge and stay up-to-date with the latest advancements in the field, ensuring that I can deliver cutting-edge solutions to meet the evolving needs of users and businesses.
-            </motion.p>
-          </motion.div>
-
-          <motion.div
-            className="bg-white shadow-md rounded-md p-6 mt-6"
-            variants={fadeInVariants}
-            initial="hidden"
-            animate="visible"
-            transition={{ duration: 0.6, delay: 0.6 }}
-          >
-
-
-          <motion.h2
-            className="text-xl font-semibold text-gray-800 mb-4"
-            layoutId="pageTitle"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
-          >
-            Tech I&apos;ve Worked With
-          </motion.h2>
-            <div className="grid grid-cols-2 gap-4">
-              <motion.div
-                variants={fadeInVariants}
-                initial="hidden"
-                animate="visible"
-                transition={{ duration: 0.6, delay: 0.8 }}
-              >
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">Languages</h3>
-                <ul className="list-disc list-inside">
-                  <li className="text-gray-700">Python</li>
-                  <li className="text-gray-700">Java</li>
-                  <li className="text-gray-700">C</li>
-                  <li className="text-gray-700">OCaml</li>
-                  <li className="text-gray-700">SQL (MySQL)</li>
-                  <li className="text-gray-700">HTML/CSS</li>
-                  <li className="text-gray-700">JavaScript</li>
-                </ul>
-              </motion.div>
-              <motion.div
-                variants={fadeInVariants}
-                initial="hidden"
-                animate="visible"
-                transition={{ duration: 0.6, delay: 1 }}
-                >
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">Frameworks</h3>
-                <ul className="list-disc list-inside">
-                  <li className="text-gray-700">Expo</li>
-                  <li className="text-gray-700">Next.js</li>
-                  <li className="text-gray-700">Flask</li>
-                </ul>
-              </motion.div>
-              <motion.div
-                variants={fadeInVariants}
-                initial="hidden"
-                animate="visible"
-                transition={{ duration: 0.6, delay: 1.2 }}
-              >
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">Developer Tools</h3>
-                <ul className="list-disc list-inside">
-                  <li className="text-gray-700">GitHub</li>
-                  <li className="text-gray-700">Google Firebase (Firestore)</li>
-                  <li className="text-gray-700">VS Code</li>
-                  <li className="text-gray-700">IntelliJ</li>
-                </ul>
-              </motion.div>
-              <motion.div
-                variants={fadeInVariants}
-                initial="hidden"
-                animate="visible"
-                transition={{ duration: 0.6, delay: 1.4 }}
-               >
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">Libraries</h3>
-                <ul className="list-disc list-inside">
-                  <li className="text-gray-700">NumPy</li>
-                  <li className="text-gray-700">Matplotlib</li>
-                </ul>
-              </motion.div>
+              {section.images.map((image, index) => (
+                <div key={index} className="image-wrapper">
+                  <div className="image-container">
+                    <Image src={image} alt="Image" layout="fill" objectFit="contain" />
+                  </div>
+                </div>
+              ))}
             </div>
-          </motion.div>
-        </div>
+          </section>
+        ))}
       </div>
+
+      <style jsx>{`
+        .image-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          grid-gap: 1rem;
+          padding: 0 10rem; /* Add padding to the sides */
+        }
+
+        .frameworks-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust the minimum width of each column */
+          grid-gap: 5rem; /* Increase the gap between images */
+          padding: 0 13rem; /* Add padding to the sides */
+        }
+
+        .image-wrapper {
+          position: relative;
+          height: 75px; /* Set the desired height */
+        }
+
+        .framework-wrapper {
+          position: relative;
+          height: 50px; /* Set the desired height */
+        }
+
+
+
+        .image-container {
+          width: 100%;
+          height: 100%;
+        }
+      `}</style>
     </div>
   );
 }
-
-
-
-
