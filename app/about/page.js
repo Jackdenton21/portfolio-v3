@@ -37,7 +37,7 @@ export default function Home() {
         ],
       },
       {
-        title: 'Database Related',
+        title: 'Databases',
         images: [
           '/images/tech/kafka.png',
           '/images/tech/mysql.png',
@@ -122,7 +122,7 @@ export default function Home() {
       <div>
         {sections.map((section, index) => (
           <section key={index} className="mt-8">
-            <h2 className="text-center mb-10 font-bold">{section.title}</h2>
+            <h2 className="text-center mb-10 font-bold"><em>{section.title}</em></h2>
             <div
               className={`image-grid ${section.title === 'Frameworks' ? 'frameworks-grid' : ''}`}
             >
@@ -143,13 +143,15 @@ export default function Home() {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1rem;
     padding: 0 10rem; /* Add default padding to the sides */
+
   }
 
   .frameworks-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust the minimum width of each column */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust the minimum width of each column */
     grid-gap: 5rem; /* Increase the gap between images */
-    padding: 0 13rem; /* Add default padding to the sides */
+    padding: 0 15rem; /* Add default padding to the sides */
+
   }
 
   .image-wrapper {
@@ -168,7 +170,9 @@ export default function Home() {
   @media (max-width: 640px) {
     .image-grid,
     .frameworks-grid {
-      padding: 0 4rem; /* Adjust the padding for small screens */
+      padding: 0 2rem; /* Adjust the padding for small screens */
+
+
 
     }
   }
@@ -177,13 +181,15 @@ export default function Home() {
     .image-grid,
     .frameworks-grid {
       padding: 0 2rem; /* Adjust the padding for medium screens */
+            padding: 0 4rem; /* Adjust the padding for small screens */
+
     }
   }
 
   @media (min-width: 1025px) {
     .image-grid,
     .frameworks-grid {
-      padding: 0 10rem; /* Adjust the padding for large screens */
+      padding: 0 8rem; /* Adjust the padding for large screens */
     }
   }
 
