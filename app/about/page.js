@@ -71,7 +71,7 @@ export default function Home() {
               {section.images.map((image, index) => (
                 <div key={index} className="image-wrapper">
                   <div className="image-container">
-                    <Image src={image} alt="Image" layout="fill" objectFit="contain" />
+                    <Image src={image} alt="Image" width={50} height={50} style={{objectFit:"cover"}/>
                   </div>
                 </div>
               ))}
