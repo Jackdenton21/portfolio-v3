@@ -34,14 +34,16 @@ export default function Home() {
           '/images/tech/jira.png',
           '/images/tech/kubernetes.png',
           '/images/tech/docker.png',
+          //'/images/tech/postman.png',
+
         ],
       },
       {
-        title: 'Databases',
+        title: 'Data',
         images: [
           '/images/tech/kafka.png',
-          '/images/tech/mysql.png',
           '/images/tech/cassandra.png',
+          '/images/tech/mysql.png',
           '/images/tech/firestore.png',
           '/images/tech/bigquery.png',
         ],
@@ -90,7 +92,7 @@ export default function Home() {
         transition={{ duration: 0.5}}
         className='mb-5'
       >
-        &emsp;&emsp;I&rsquo;m currently heading into my fourth year pursuing a Computer Science degree at McGill University.
+        &emsp;&emsp;I&rsquo;m currently heading into my fourth and final year studying Computer Science at McGill University.
          I&rsquo;ve had the opportunity to work at diverse set of organizations, ranging from an
          &nbsp;<a href="https://droga5.com" className='hover:text-gray-400 border-b-2 border-gray-400 mb-1'>
       industry-leading advertising agency</a>&nbsp;
@@ -106,13 +108,13 @@ export default function Home() {
         animate="visible"
         variants={paragraphVariants}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className='mb-5'
+        className='mb-5' 
 
       >
-      &emsp;&emsp;These experiences have allowed me to gain valuable insights and skills across different domains. This versatility has enabled me to tackle various aspects of software development. For more details take a look at my &nbsp;
+      &emsp;&emsp;These experiences have allowed me to gain valuable skills across different domains. This versatility has enabled me to tackle various aspects of software development. Most of my front-end experience is with building react based applications. My recent back-end work has been with SpringBoot, Kafka, and Cassandra.  For more details take a look at my &nbsp;
              
       <a href="/projects" className='hover:text-gray-400 border-b-2 border-gray-400 mb-1'>
-      projects</a>. Below are some of the technologies I&rsquo;ve worked with recently.
+      projects</a>. Below are some of the technologies I&rsquo;ve worked with.
       </motion.p>
       
     </div>
@@ -140,18 +142,14 @@ export default function Home() {
       <style jsx>{`
   .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 1rem;
-    padding: 0 10rem; /* Add default padding to the sides */
-
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    grid-gap: 2rem;
   }
 
   .frameworks-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust the minimum width of each column */
-    grid-gap: 5rem; /* Increase the gap between images */
-    padding: 0 15rem; /* Add default padding to the sides */
-
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 2rem;
   }
 
   .image-wrapper {
@@ -162,34 +160,45 @@ export default function Home() {
 
   .framework-wrapper {
     position: relative;
-    height: 30px; /* Set the desired height */
-    margin-bottom: 20px; /* Add padding to the bottom of each image */
+    height: 75px; /* Set the desired height */
+    margin-bottom: 20px; /* Add padding to the bottom of each framework */
   }
 
-  /* Responsive Padding */
+  /* Screen Size Conditions */
   @media (max-width: 640px) {
-    .image-grid,
-    .frameworks-grid {
+    .image-grid {
       padding: 0 2rem; /* Adjust the padding for small screens */
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 
 
+    }
 
+    .frameworks-grid {
+      padding: 0 3rem; /* Adjust the padding for small screens */
+      grid-column-gap: 4rem; /* Adjust the grid gap for small screens */
     }
   }
 
   @media (min-width: 641px) and (max-width: 1024px) {
-    .image-grid,
-    .frameworks-grid {
+    .image-grid {
       padding: 0 2rem; /* Adjust the padding for medium screens */
-            padding: 0 4rem; /* Adjust the padding for small screens */
+      grid-gap: 2rem; /* Adjust the grid gap for medium screens */
+    }
 
+    .frameworks-grid {
+      padding: 0 6rem; /* Adjust the padding for medium screens */
+      grid-column-gap: 9rem; /* Adjust the grid gap for medium screens */
     }
   }
 
   @media (min-width: 1025px) {
-    .image-grid,
+    .image-grid {
+      padding: 0 8rem; /* Adjust the padding for larger screens */
+    }
+
     .frameworks-grid {
-      padding: 0 8rem; /* Adjust the padding for large screens */
+      padding: 0 12rem; /* Adjust the padding for larger screens */
+      grid-column-gap: 10rem; /* Adjust the grid gap for larger screens */
     }
   }
 
@@ -198,8 +207,6 @@ export default function Home() {
     height: 100%;
   }
 `}</style>
-
      </div>
-
   );
 }
