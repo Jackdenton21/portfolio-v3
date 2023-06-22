@@ -1,21 +1,65 @@
 // pages/work-experience.js
 "use client";
-
-import React from 'react';
+import '../animation.scss';
+;import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '/components/navbar';
 
 const WorkExperiencePage = () => {
+
+  const mouseTimeout = useRef(null);
+  const [animationEnabled, setAnimationEnabled] = useState(true);
+
+  const disableAnimation = () => {
+    setAnimationEnabled(false);
+  };
+
+  const enableAnimation = () => {
+    setAnimationEnabled(true);
+  };
+
+  const handleMouseMove = (event) => {
+
+    clearTimeout(mouseTimeout.current);
+    mouseTimeout.current = setTimeout(disableAnimation, 100); // Disable animation after 2 seconds of mouse inactivity
+    enableAnimation();
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
+  useEffect(() => {
+    const bodyElement = document.body;
+
+    if (animationEnabled) {
+      bodyElement.classList.remove('animation-paused');
+      bodyElement.classList.add('animation-unpaused');
+
+    } else {
+      bodyElement.classList.add('animation-paused');
+      bodyElement.classList.remove('animation-unpaused');
+
+    }
+  }, [animationEnabled]);
+
+
+
+
   const fadeInVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
   };
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen text-slate-700">
       <Navbar />
       <motion.header
-        className="bg-gray-200 py-8"
+        className=" py-8"
         initial="hidden"
         animate="visible"
         variants={fadeInVariants}
@@ -29,7 +73,7 @@ const WorkExperiencePage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Work Experience
+            <em>Work Experience</em>
           </motion.h1>
         </div>
       </motion.header>
@@ -40,7 +84,7 @@ const WorkExperiencePage = () => {
         variants={fadeInVariants}
         transition={{ duration: 0.6, delay: 0.4 }}
       >
-        <section className="bg-white rounded-lg shadow-lg p-6 mb-8 flex items-center">
+        <section className="bg-white rounded-lg shadow-lg p-6 mb-8 flex items-center font-medium">
           <div className="w-1/4 max-w-full items-center">
             <img
               src="/images/twalmart.png"

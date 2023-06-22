@@ -1,9 +1,51 @@
 "use client";
-import React from 'react';
+;import React, { useEffect, useRef, useState } from 'react';
 import Navbar from '/components/navbar';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import '../animation.scss';
+
 export default function Home() {
+
+  const mouseTimeout = useRef(null);
+  const [animationEnabled, setAnimationEnabled] = useState(true);
+
+  const disableAnimation = () => {
+    setAnimationEnabled(false);
+  };
+
+  const enableAnimation = () => {
+    setAnimationEnabled(true);
+  };
+
+  const handleMouseMove = (event) => {
+
+    clearTimeout(mouseTimeout.current);
+    mouseTimeout.current = setTimeout(disableAnimation, 100); // Disable animation after 2 seconds of mouse inactivity
+    enableAnimation();
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
+  useEffect(() => {
+    const bodyElement = document.body;
+
+    if (animationEnabled) {
+      bodyElement.classList.remove('animation-paused');
+      bodyElement.classList.add('animation-unpaused');
+
+    } else {
+      bodyElement.classList.add('animation-paused');
+      bodyElement.classList.remove('animation-unpaused');
+
+    }
+  }, [animationEnabled]);
 
   const paragraphVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -60,10 +102,10 @@ export default function Home() {
       },
     ];
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className=" min-h-screen">
       <Navbar />
       <motion.header
-        className="bg-gray-200 py-8"
+        className=" py-8"
         initial="hidden"
         animate="visible"
         variants={fadeInVariants}
@@ -71,20 +113,20 @@ export default function Home() {
       >
         <div className="container mx-auto px-4 text-center">
           <motion.h1
-            className="text-xl font-bold"
+            className="text-xl font-bold text-slate-700"
             layoutId="pageTitle"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            About Me
+            <em>About Me</em>
           </motion.h1>
         </div>
       </motion.header>
 
 
 
-      <div className="text-gray-600 text-l font-bold mb-4 py-8 px-8 sm:px-12 md:px-16 lg:px-20 xl:px-50 2xl:px-50">
+      <div className="text-slate-700 text-l font-medium mb-4 py-8 px-8 sm:px-20">
       <motion.p
         initial="hidden"
         animate="visible"
@@ -124,7 +166,7 @@ export default function Home() {
       <div>
         {sections.map((section, index) => (
           <section key={index} className="mt-8">
-            <h2 className="text-center mb-10 font-bold"><em>{section.title}</em></h2>
+            <h2 className="text-center text-slate-700 mb-10 font-bold"><em>{section.title}</em></h2>
             <div
               className={`image-grid ${section.title === 'Frameworks' ? 'frameworks-grid' : ''}`}
             >
