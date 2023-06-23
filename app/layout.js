@@ -1,9 +1,11 @@
 import './globals.css'
+import { Analytics } from '@vercel/analytics/react';
+
 
 
 export const metadata = {
   title: 'Jack Denton Portfolio',
-  description: 'Built by Jack Denton',
+  description: 'Built by Jack Denton.',
 }
 
 export default function RootLayout({ children }) {
