@@ -3,49 +3,9 @@
 import Navbar from '/components/navbar';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import '../animation.scss';
+import '../background.css';
 
 export default function Home() {
-
-  const mouseTimeout = useRef(null);
-  const [animationEnabled, setAnimationEnabled] = useState(true);
-
-  const disableAnimation = () => {
-    setAnimationEnabled(false);
-  };
-
-  const enableAnimation = () => {
-    setAnimationEnabled(true);
-  };
-
-  const handleMouseMove = (event) => {
-
-    clearTimeout(mouseTimeout.current);
-    mouseTimeout.current = setTimeout(disableAnimation, 100); // Disable animation after 2 seconds of mouse inactivity
-    enableAnimation();
-  };
-
-  useEffect(() => {
-    document.addEventListener('mousemove', handleMouseMove);
-
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
-
-  useEffect(() => {
-    const bodyElement = document.body;
-
-    if (animationEnabled) {
-      bodyElement.classList.remove('animation-paused');
-      bodyElement.classList.add('animation-unpaused');
-
-    } else {
-      bodyElement.classList.add('animation-paused');
-      bodyElement.classList.remove('animation-unpaused');
-
-    }
-  }, [animationEnabled]);
 
   const paragraphVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -135,7 +95,7 @@ export default function Home() {
         className='mb-5'
       >
         &emsp;&emsp;I&rsquo;m currently heading into my fourth and final year studying Computer Science at McGill University.
-         I&rsquo;ve had the opportunity to work at diverse set of organizations, ranging from an
+         I&rsquo;ve had the opportunity to work at a diverse set of organizations, ranging from an
          &nbsp;<a href="https://droga5.com" className='hover:text-gray-400 border-b-2 border-gray-400 mb-1'>
       industry-leading advertising agency</a>&nbsp;
       to a &nbsp;

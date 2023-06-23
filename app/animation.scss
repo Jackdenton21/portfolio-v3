@@ -63,10 +63,10 @@ body {
   /* img size is 50x50 */
   background: url($bg-url) repeat 0 0;
 
-  -webkit-animation: bg-scrolling .5s infinite; /* Safari 4+ */
-  -moz-animation:    bg-scrolling .5s infinite; /* Fx 5+ */
-  -o-animation:      bg-scrolling .5s infinite; /* Opera 12+ */
-  animation:         bg-scrolling .5s infinite; /* IE 10+ */
+  -webkit-animation: bg-scrolling 3s infinite; /* Safari 4+ */
+  -moz-animation:    bg-scrolling 3s infinite; /* Fx 5+ */
+  -o-animation:      bg-scrolling 3s infinite; /* Opera 12+ */
+  animation:         bg-scrolling 3s infinite; /* IE 10+ */
   -webkit-animation-timing-function:linear;
   -moz-animation-timing-function:    linear;
   -o-animation-timing-function:      linear;
