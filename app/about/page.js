@@ -60,7 +60,7 @@ export default function Home() {
     },
   ];
   return (
-    <div className=" min-h-screen">
+    <div className="min-h-screen">
       <Navbar />
       <motion.header
         className=" py-8"
@@ -82,13 +82,13 @@ export default function Home() {
         </div>
       </motion.header>
 
-      <div className="text-slate-700 text-l font-medium mb-4 py-8 px-8 sm:px-20">
+      <div className="text-slate-700 text-l font-medium mb-4 px-4 sm:px-20">
         <motion.p
           initial="hidden"
           animate="visible"
           variants={paragraphVariants}
           transition={{ duration: 0.5 }}
-          className="mb-5"
+          className="mb-5 px-10"
         >
           &emsp;&emsp;I&rsquo;m currently heading into my fourth and final year
           studying Computer Science at McGill University. I&rsquo;ve had the
@@ -120,7 +120,7 @@ export default function Home() {
           animate="visible"
           variants={paragraphVariants}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mb-5"
+          className="mb-5 px-10"
         >
           &emsp;&emsp;These experiences have allowed me to gain valuable skills
           across different domains. This versatility has enabled me to tackle
