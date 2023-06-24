@@ -25,12 +25,6 @@ export default function Navbar() {
                 About
               </a>
               <a
-                href="/contact"
-                className="border-transparent text-slate-700 hover:text-gray-400 hover:border-gray-300 whitespace-nowrap py-5 px-1 border-b-2"
-              >
-                Contact
-              </a>
-              <a
                 href="/projects"
                 className="border-transparent text-slate-700 hover:text-gray-400 hover:border-gray-300 whitespace-nowrap py-5 px-1 border-b-2 "
               >
@@ -41,6 +35,12 @@ export default function Navbar() {
                 className="border-transparent text-slate-700 hover:text-gray-400 hover:border-gray-300 whitespace-nowrap py-5 px-1 border-b-2"
               >
                 Experience
+              </a>
+              <a
+                href="/resume"
+                className="border-transparent text-slate-700 hover:text-gray-400 hover:border-gray-300 whitespace-nowrap py-5 px-1 border-b-2"
+              >
+                Resume
               </a>
             </div>
           </div>
