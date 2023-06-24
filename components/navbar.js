@@ -9,7 +9,7 @@ export default function Navbar() {
             <div className="flex-shrink-0 flex items-center">
             <a href="/" className='border-transparent hover:text-gray-300 hover:border-gray-300 whitespace-nowrap py-5 px-1 border-b-2 text-sm font-bold'>
             <Image
-                src="/../public/images/colorlogo.png"
+                src="/images/tfg.png"
                 alt="Logo"
                 width={40}
                 height={40}

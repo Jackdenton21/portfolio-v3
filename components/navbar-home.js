@@ -9,7 +9,7 @@ export default function Navbar() {
             <div className="flex-shrink-0 flex items-center">
             <a className='py-5 px-1'>
             <Image
-                src="/../public/images/colorlogo.png"
+                src="/../public/images/tfg.png"
                 alt="Logo"
                 width={40}
                 height={40}
