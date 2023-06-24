@@ -15,14 +15,7 @@ export default function Home() {
       </header>
 
       <div className="flex justify-center align-center">
-        <video controls className="center" width={800}
-            height={800}>
-          <source
-            src="/chromeExtension.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
+        
       </div>
     </div>
   );
