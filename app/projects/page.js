@@ -5,7 +5,7 @@ import "../background.css";
 export default function Home() {
   return (
     <div className="min-h-screen text-slate-700">
-      <Navbar />
+       <Navbar />
       <header className="py-8">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-xl font-bold">
@@ -15,7 +15,19 @@ export default function Home() {
       </header>
 
       <div className="flex justify-center align-center">
-        
+        <div className="container mx-auto">
+          <div className="sm:hidden">
+                HELLO
+          </div>
+        </div>
+      </div>
+
+      <div className="flex justify-center align-center">
+        <div className="container mx-auto">
+          <div className="hidden sm:block">
+              HELLO WEB
+          </div>
+        </div>
       </div>
     </div>
   );

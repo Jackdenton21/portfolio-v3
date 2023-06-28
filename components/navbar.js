@@ -37,7 +37,7 @@ export default function Navbar() {
                 Experience
               </a>
               <a
-                href="/resume"
+                href="/Resume.pdf"
                 className="border-transparent text-slate-700 hover:text-gray-400 hover:border-gray-300 whitespace-nowrap py-5 px-1 border-b-2"
               >
                 Resume
