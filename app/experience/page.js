@@ -40,7 +40,7 @@ const WorkExperiencePage = () => {
         variants={fadeInVariants}
         transition={{ duration: 0.6, delay: 0.4 }}
       >
-        <section className="rounded-lg shadow-lg p-6 mb-8 flex items-center font-medium border border-slate-700">
+        <section className="rounded-lg shadow-xl p-6 mb-8 flex items-center font-medium">
           <div className="w-1/4 max-w-full items-center">
             <img
               src="/images/twalmart.png"
@@ -93,7 +93,7 @@ const WorkExperiencePage = () => {
             </ul>
           </div>
         </section>
-        <section className="rounded-lg shadow-lg p-6 mb-8 flex border border-slate-700">
+        <section className="rounded-lg shadow-xl p-6 mb-8 flex">
           <div className="w-1/4 text-center max-w-full items-center">
             <img
               src="/images/tfg.png"
@@ -145,7 +145,7 @@ const WorkExperiencePage = () => {
             </ul>
           </div>
         </section>
-        <section className="rounded-lg shadow-lg p-6 mb-8 flex border border-slate-700">
+        <section className="rounded-lg shadow-xl p-6 mb-8 flex">
           <div className="w-1/4 text-center max-w-full items-center">
             <img
               src="/images/d5.png"
