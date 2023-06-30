@@ -48,15 +48,15 @@ const HomePage = () => {
       </header>
 
       <div className="flex">
-        <div className="flex w-1/2">
-          <div className="container mx-auto px-4 text-center">
-            <h1 className="text-xl font-bold">Golf Social Media App</h1>
-          </div>
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-xl font-bold mb-10 lg:hidden">
+            Golf Social Media App
+          </h1>
         </div>
       </div>
 
-      <div className="flex">
-        <div className="w-1/2">
+      <div className="flex md:pl-10 md:pr-10">
+        <div className="max-w-[400px] min-w-[250px]">
           <Carousel
             selectedItem={selectedIndex}
             onChange={handleSlideChange}
@@ -64,16 +64,24 @@ const HomePage = () => {
           >
             {images.map((image, index) => (
               <div key={index}>
-                <img src={image.src} alt={image.alt}/>
+                <img src={image.src} alt={image.alt} />
               </div>
             ))}
           </Carousel>
         </div>
-        <div className="w-1/2">
+        <div className="">
           <div className="flex">
             <div className="h-1/2">
+
               <div className="container mx-auto px-4 text-center">
-                <ul className="list-disc pl-4 text-l font-medium">
+                <h1 className="text-xl font-bold mb-10 hidden lg:block">
+                  Golf Social Media App
+                </h1>
+
+              </div>
+
+              <div className="container mx-auto px-4 text-center md:pl-10">
+                <ul className="list-disc pl-4 text-l font-medium space-y-4">
                   <li>
                     Developed a Golf social media app that supports image
                     sharing, inter-user messaging, and public or private game
