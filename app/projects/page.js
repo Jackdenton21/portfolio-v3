@@ -10,12 +10,12 @@ const HomePage = () => {
     {
       src: "/images/iphone12.png",
       alt: "Image 1",
-      text: "SHOW THIS TEXT",
+      text: "Screenshot 1",
     },
     {
       src: "/images/iphone12.png",
       alt: "Image 2",
-      text: "WHY NOT SHOW",
+      text: "Screenshot 2",
     },
     // Add more image objects as needed
   ];
@@ -38,9 +38,9 @@ const HomePage = () => {
   };
 
   return (
-    <div className="min-h-screen text-slate-700">
+    <div className=" text-slate-700 mb-10">
       <Navbar />
-      <header className="py-8 mb-4 sm:mb-8">
+      <header className="py-8 mb-4">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-xl font-bold">
             <em>Projects</em>
@@ -48,7 +48,7 @@ const HomePage = () => {
         </div>
       </header>
 
-      <div className="flex">
+      <div className="flex mb-5">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-xl font-bold mb-5 sm:mb-10 lg:hidden">
             Golf Social Media App
@@ -57,8 +57,6 @@ const HomePage = () => {
       </div>
 
       <div className="flex-row sm:flex md:px-10">
-       
-
         <div className="">
           <div className="flex">
             <div className="h-1/2">
@@ -72,10 +70,10 @@ const HomePage = () => {
                 <ul className="list-disc pl-4 text-l font-medium space-y-4">
                   <li>
                     Developed a Golf social media app that supports image
-                    sharing, messaging, and public or private game
-                    creation. The cross-platform application is designed to
-                    further connect you with people you already know or find new
-                    people to play with.
+                    sharing, messaging, and public or private game creation. The
+                    cross-platform application is designed to further connect
+                    you with people you already know or find new people to play
+                    with.
                   </li>
                   <li>
                     Integrated Google Maps API to enable location-based features
@@ -110,8 +108,7 @@ const HomePage = () => {
           </div>
         </div>
 
-
-        <div className="max-w-[400px] min-w-[275px]">
+        <div className="max-w-[400px] min-w-[275px] mx-auto md:mr-20 ">
           <Carousel
             selectedItem={selectedIndex}
             onChange={handleSlideChange}
@@ -124,10 +121,53 @@ const HomePage = () => {
             ))}
           </Carousel>
         </div>
-
-
-
       </div>
+
+
+      <hr class="border-t-4 border-gray-400 w-4/5 mx-auto my-8"></hr>
+
+
+      <div className="flex mb-10">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-xl font-bold mb-5 sm:mb-10 lg:hidden">
+            Productivity Enhancing Chrome Extension
+          </h1>
+        </div>
+      </div>
+
+      <div className="flex-row sm:flex md:pw-10 mb-20">
+        <div className="container mx-auto px-4">
+          <h1 className="text-xl font-bold mb-5 sm:mb-10 hidden lg:block text-center">
+            Productivity Enhancing Chrome Extension
+          </h1>
+
+          <p className="mx-auto px-4 md:pl-10 ">
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;The Google Chrome extension is
+            designed to help users quickly find answers to highlighted questions
+            as well as definitions of highlighted words. The tool is built with
+            the user experience in mind, as it displays the result in a pop-up
+            bubble next to the user&rsquo;s cursor so there is no need to open a
+            new tab or press any keys. The extension is powered by the OpenAI
+            API, DBPedia, and DictionaryAPI.dev.
+          </p>
+        </div>
+
+        <div className="sm:max-w-[400px] sm:min-w-[275px] md:mr-20 mt-20 text-center">
+          <a
+            href="https://www.youtube.com/watch?v=VhofORWy8VQ&t=2s"
+            className="hover:text-gray-400 border-b-2 border-gray-400 mb-1"
+          >
+            Click here for demo video
+          </a>
+        </div>
+      </div>
+
+      <hr class="border-t-4 border-gray-400 w-4/5 mx-auto my-8"></hr>
+
+
+
+
+
     </div>
   );
 };
