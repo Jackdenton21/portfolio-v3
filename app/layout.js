@@ -11,8 +11,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}
+
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap"
+          rel="stylesheet"
+        />
+</head>
+
+
+      <body>
+      {children}
       <Analytics />
+
+
 
       <footer className="text-center py-4 text-sm">
         <p>&copy; {new Date().getFullYear()} Developed using Next.JS and TailWind CSS. Deployed with Vercel. </p>

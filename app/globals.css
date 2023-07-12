@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+
+/* Add this rule to apply the font to all elements */
+* {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+/* Add any other global CSS styles you may have */
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
