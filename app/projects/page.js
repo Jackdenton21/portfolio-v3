@@ -122,7 +122,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <hr class="border-t-4 w-4/5 mx-auto my-8"></hr>
+      <hr class="border border-slate-700 w-4/5 mx-auto my-8"></hr>
 
       <div className="flex mb-5">
         <div className="container mx-auto px-4 text-center">
@@ -167,7 +167,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <hr class="border-t-4 w-4/5 mx-auto my-8"></hr>
+      <hr class="border border-slate-700  w-4/5 mx-auto my-8"></hr>
 
       <div className="flex mb-5">
         <div className="container mx-auto px-4 text-center">
@@ -200,18 +200,15 @@ const HomePage = () => {
         </div>
 
         <div className="sm:max-w-[400px] sm:min-w-[275px] md:mr-20 mt-20 text-center hidden md:block">
-          <a
-          >
+          <a>
             <em>Final project for COMP273 @ McGill University</em>
           </a>
         </div>
       </div>
 
-<div className="flex justify-center items-center">
-<img src="images/sscpu.png" className="w-4/5 h-auto"></img>
-</div>
-
-
+      <div className="flex justify-center items-center">
+        <img src="images/sscpu.png" className="w-4/5 h-auto"></img>
+      </div>
     </div>
   );
 };
