@@ -10,7 +10,7 @@ export default function Home() {
       <div className="flex items-center justify-center mt-10">
         <div className="my-100 text-xl font-bold">
           <a
-            href="../Resume.pdf"
+            href="../Resumev2.pdf"
             className="text-slate-700 font-bold pt-16 px-4"
           >
             <em>Click To View Resume</em>
