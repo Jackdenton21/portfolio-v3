@@ -7,13 +7,13 @@ export default function Home() {
     <div className="min-h-screen">
       <Navbar />
 
-      <div className="flex items-center justify-center mt-20">
-        <div className="my-100">
+      <div className="flex items-center justify-center mt-10">
+        <div className="my-100 text-xl font-bold">
           <a
             href="../Resume.pdf"
-            className="text-slate-700 font-bold py-2 px-4"
+            className="text-slate-700 font-bold pt-16 px-4"
           >
-            Click To View Resume
+            <em>Click To View Resume</em>
           </a>
         </div>
       </div>

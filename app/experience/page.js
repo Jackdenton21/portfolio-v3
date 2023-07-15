@@ -34,13 +34,13 @@ const WorkExperiencePage = () => {
         </div>
       </motion.header>
       <motion.main
-        className="container mx-auto px-4 py-8"
+        className="container mx-auto px-4"
         initial="hidden"
         animate="visible"
         variants={fadeInVariants}
         transition={{ duration: 0.6, delay: 0.4 }}
       >
-        <section className="border-slate-700 rounded-lg p-6 mb-8 flex-row sm:flex items-center font-medium">
+        <section className="border-slate-700 rounded-lg px-2 py-6 mb-8 flex-row sm:flex items-center font-medium">
           <div className="sm:w-1/4 max-w-full items-center">
             <img
               src="/images/twalmart.png"
@@ -101,7 +101,7 @@ const WorkExperiencePage = () => {
 
         <hr class="border border-arrow border-slate-700  w-4/5 mx-auto my-8"></hr>
 
-        <section className="border-slate-700 rounded-lg p-6 mb-8 flex-row sm:flex ">
+        <section className="border-slate-700 rounded-lg px-2 py-6 mb-8 flex-row sm:flex ">
           <div className="sm:w-1/4 text-center max-w-full items-center">
             <img
               src="/images/tfg.png"
@@ -161,7 +161,7 @@ const WorkExperiencePage = () => {
 
         <hr class="border border-slate-700 w-4/5 mx-auto my-8"></hr>
 
-        <section className="border-slate-700 rounded-lg p-6 mb-8 flex-row sm:flex ">
+        <section className="border-slate-700 rounded-lg px-2 py-6 mb-8 flex-row sm:flex ">
           <div className="sm:w-1/4 text-center max-w-full items-center">
             <img
               src="/images/d5.png"

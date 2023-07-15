@@ -69,7 +69,7 @@ export default function Home() {
         variants={fadeInVariants}
         transition={{ duration: 0.6 }}
       >
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-4 pb-3 text-center">
           <motion.h1
             className="text-xl font-bold text-slate-700"
             layoutId="pageTitle"

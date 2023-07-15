@@ -38,8 +38,16 @@ const HomePage = () => {
   };
 
   return (
-    <div className="text-slate-700 mb-10 mx-4">
+    <div className="text-slate-700 mx-4">
       <Navbar />
+
+      <div className="container mx-auto px-4 pt-8 text-center">
+        <h1 className="text-xl font-bold text-slate-700">
+          <em>Projects</em>
+        </h1>
+      </div>
+
+      <div className="mb-10">
 
       <div className="flex mb-5 mt-10">
         <div className="container mx-auto px-4 text-center">
@@ -66,19 +74,19 @@ const HomePage = () => {
               <div className="container mx-auto px-4 text-center md:pl-10">
                 <ul className="list-disc pl-4 text-l font-medium space-y-4 md:pr-10">
                   <li>
-                    &emsp;&emsp;&emsp;&emsp;Developed a Golf social media app
+                   Developed a Golf social media app
                     that supports image sharing, messaging, and public or
                     private game creation. The cross-platform application is
                     designed to further connect you with people you already know
                     or find new people to play with.
                   </li>
                   <li>
-                    &emsp;&emsp;&emsp;&emsp;Integrated Google Maps API to enable
+                    Integrated Google Maps API to enable
                     location-based features such as finding nearby golf courses
                     and games.
                   </li>
                   <li>
-                    &emsp;&emsp;&emsp;&emsp;Utilized Jest to write and maintain
+                    Utilized Jest to write and maintain
                     unit tests, achieving 85% code coverage and significantly
                     improving the overall code quality and maintainability of
                     the application.
@@ -141,7 +149,7 @@ const HomePage = () => {
           <div className="container mx-auto px-4 text-center md:pl-10">
             <ul className="list-disc pl-4 text-l font-medium space-y-4 md:pr-10">
               <li>
-                &emsp;&emsp;&emsp;&emsp;Created a Google Chrome extension to
+                Created a Google Chrome extension to
                 help users quickly find answers to highlighted questions as well
                 as definitions of highlighted words. The tool is built with the
                 user experience in mind, as it displays the result in a pop-up
@@ -150,7 +158,7 @@ const HomePage = () => {
                 the OpenAI API, DBPedia, and DictionaryAPI.dev.
               </li>
               <li>
-                &emsp;&emsp;&emsp;&emsp;Won best use of modern technology at
+                Won best use of modern technology at
                 McGill 2022 CodeJam();
               </li>
             </ul>
@@ -186,13 +194,13 @@ const HomePage = () => {
           <div className="container mx-auto px-4 text-center md:pl-10 mb-10">
             <ul className="list-disc pl-4 text-l font-medium space-y-4 md:pr-10">
               <li>
-                &emsp;&emsp;&emsp;&emsp;Created a functioning CPU using Logism,
+                Created a functioning CPU using Logism,
                 a digital circuit design and simulation tool. The CPU includes
                 an Arithmetic Logic Unit, RAM, and other key components
                 necessary to execute basic instructions.
               </li>
               <li>
-                &emsp;&emsp;&emsp;&emsp;Instructions included reading/writing
+                Instructions included reading/writing
                 to/from RAM and performing addition/subtraction.
               </li>
             </ul>
@@ -208,6 +216,7 @@ const HomePage = () => {
 
       <div className="flex justify-center items-center">
         <img src="images/sscpu.png" className="w-4/5 h-auto"></img>
+      </div>
       </div>
     </div>
   );
