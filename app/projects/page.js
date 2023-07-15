@@ -91,7 +91,7 @@ const HomePage = () => {
                 </h2>
               </div>
 
-              <div className="container mx-auto px-4 text-center md:pl-10">
+              <div className="container mx-auto px-4 text-center md:pl-10 mb-5 sm:mb-0">
                 <ul className="list-disc pl-4 text-l font-medium space-y-4 md:pr-10">
                   <li>
                    Developed a Golf social media app
@@ -135,7 +135,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="max-w-[400px] min-w-[275px] mx-auto md:mr-20 ">
+        <div className="max-w-[400px] min-w-[275px] mx-auto md:mr-20">
           <Carousel
             selectedItem={selectedIndex}
             onChange={handleSlideChange}
