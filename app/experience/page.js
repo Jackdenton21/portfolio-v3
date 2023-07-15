@@ -45,7 +45,7 @@ const WorkExperiencePage = () => {
             <img
               src="/images/twalmart.png"
               alt="Company A Logo"
-              className="w-full h-auto object-contain hidden sm:block"
+              className="w-full h-auto object-contain hidden sm:inline-block"
             />
             <motion.h2
               className="text-xl mb-2 text-center"
@@ -166,7 +166,7 @@ const WorkExperiencePage = () => {
             <img
               src="/images/d5.png"
               alt="Company A Logo"
-              className="w-60 h-40 inline-block object-contain hidden sm:block"
+              className="w-60 h-40 inline-block object-contain hidden sm:inline-block"
               style={{ marginTop: "-2rem" }}
             />
             <motion.h2
