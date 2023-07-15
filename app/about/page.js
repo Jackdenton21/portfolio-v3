@@ -82,7 +82,7 @@ export default function Home() {
         </div>
       </motion.header>
 
-      <div className="text-slate-700 text-l font-medium mb-4 px-4 sm:px-20">
+      <div className="text-slate-700 font-medium mb-4 sm:px-20">
         <motion.p
           initial="hidden"
           animate="visible"

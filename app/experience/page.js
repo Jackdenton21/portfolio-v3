@@ -40,12 +40,12 @@ const WorkExperiencePage = () => {
         variants={fadeInVariants}
         transition={{ duration: 0.6, delay: 0.4 }}
       >
-        <section className="border-slate-700 rounded-lg p-6 mb-8 flex items-center font-medium">
-          <div className="w-1/4 max-w-full items-center">
+        <section className="border-slate-700 rounded-lg p-6 mb-8 flex-row sm:flex items-center font-medium">
+          <div className="sm:w-1/4 max-w-full items-center">
             <img
               src="/images/twalmart.png"
               alt="Company A Logo"
-              className="w-full h-auto object-contain"
+              className="w-full h-auto object-contain hidden sm:block"
             />
             <motion.h2
               className="text-xl mb-2 text-center"
@@ -101,12 +101,12 @@ const WorkExperiencePage = () => {
 
         <hr class="border border-arrow border-slate-700  w-4/5 mx-auto my-8"></hr>
 
-        <section className="border-slate-700 rounded-lg p-6 mb-8 flex">
-          <div className="w-1/4 text-center max-w-full items-center">
+        <section className="border-slate-700 rounded-lg p-6 mb-8 flex-row sm:flex ">
+          <div className="sm:w-1/4 text-center max-w-full items-center">
             <img
               src="/images/tfg.png"
               alt="Company A Logo"
-              className="w-20 h-20 object-contain inline-block"
+              className="w-20 h-20 object-contain inline-block hidden sm:inline-block"
             />
             <motion.h2
               className="text-xl mb-2 text-center"
@@ -161,12 +161,12 @@ const WorkExperiencePage = () => {
 
         <hr class="border border-slate-700 w-4/5 mx-auto my-8"></hr>
 
-        <section className="border-slate-700 rounded-lg p-6 mb-8 flex">
-          <div className="w-1/4 text-center max-w-full items-center">
+        <section className="border-slate-700 rounded-lg p-6 mb-8 flex-row sm:flex ">
+          <div className="sm:w-1/4 text-center max-w-full items-center">
             <img
               src="/images/d5.png"
               alt="Company A Logo"
-              className="w-60 h-40 inline-block object-contain"
+              className="w-60 h-40 inline-block object-contain hidden sm:block"
               style={{ marginTop: "-2rem" }}
             />
             <motion.h2

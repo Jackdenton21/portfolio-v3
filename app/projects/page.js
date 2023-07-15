@@ -38,7 +38,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="text-slate-700 mb-10">
+    <div className="text-slate-700 mb-10 mx-4">
       <Navbar />
 
       <div className="flex mb-5 mt-10">
