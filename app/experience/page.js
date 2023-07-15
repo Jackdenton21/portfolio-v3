@@ -71,10 +71,9 @@ const WorkExperiencePage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
-                Currently building a module for the Supply Chain Tracker API
-                that will store data on the unit level for all prescription
-                pharmacy items as required by the Supply Chain Safety Act that
-                comes into place Nov. 2023.
+                Updating various systems to process and save additional data for
+                all prescription pharmacy items as required by the Supply Chain
+                Safety Act that comes into place Nov. 2023.
               </motion.li>
 
               <motion.li
@@ -86,6 +85,7 @@ const WorkExperiencePage = () => {
                 Working with large scale systems — 189Mn Rx units processed and
                 shipped annually.
               </motion.li>
+            
               <motion.li
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -132,9 +132,9 @@ const WorkExperiencePage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
-                Designed and implemented a full-stack web application using
-                Next.js, AWS, and Flask to display real-time statistics for Tech
-                For Good’s deployed networks.
+                Designed and implemented a web application using Next.js, AWS,
+                and Flask to display real-time statistics for Tech For Good’s
+                deployed networks.
               </motion.li>
               <motion.li
                 initial={{ opacity: 0, y: 20 }}
@@ -152,8 +152,7 @@ const WorkExperiencePage = () => {
                 style={{ marginTop: "1rem" }}
               >
                 Utilized GitHub for effective version control and project
-                management, ensuring timely completion of tasks and seamless
-                collaboration with team members.
+                management.
               </motion.li>
             </ul>
           </div>

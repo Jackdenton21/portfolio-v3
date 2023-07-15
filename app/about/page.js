@@ -107,14 +107,14 @@ export default function Home() {
           >
             fast-paced startup
           </a>
-          , and even the &nbsp;
+          &nbsp;and even &nbsp;
           <a
             href="https://tech.walmart.com/content/walmart-global-tech/en_us/about.html"
             className="hover:text-gray-400 border-b-2 border-gray-400 mb-1"
           >
             the world&rsquo;s largest company
           </a>
-           {" "}by revenue.
+          &nbsp;by revenue.
         </motion.p>
         <motion.p
           initial="hidden"
