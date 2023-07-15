@@ -95,6 +95,15 @@ const WorkExperiencePage = () => {
                 Technologies involved include Spring Boot, Kafka, CassandraDB
                 (NoSQL), and Google BigQuery.
               </motion.li>
+
+              <motion.li
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
+                style={{ marginTop: "1rem" }}
+              >
+               Using Offset Explorer to manage Kafka clusters and KafkaSender to send mock messages.
+              </motion.li>
             </ul>
           </div>
         </section>
