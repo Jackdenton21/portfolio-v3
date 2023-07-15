@@ -8,14 +8,34 @@ import "../background.css";
 const HomePage = () => {
   const images = [
     {
-      src: "/images/iphone12.png",
+      src: "/images/framed/Feed.png",
       alt: "Image 1",
-      text: "Screenshot 1",
+      text: "A user's feed shows the most recent images and text shared by people or clubs they follow.",
     },
     {
-      src: "/images/iphone12.png",
+      src: "/images/framed/Map.png",
       alt: "Image 2",
-      text: "Screenshot 2",
+      text: "   This was completed while studying abroad at Trinity in Dublin, Ireland, so the features focus on Irish clubs. ",
+    },
+    {
+      src: "/images/framed/ClubProfile.png",
+      alt: "Image 2",
+      text: "Find directions to a club and make sure to follow to see available games.",
+    },
+    {
+      src: "/images/framed/FindGame.png",
+      alt: "Image 2",
+      text:  "You can find games by your relative location, clubs you follow, and of course, private invites.",
+    },
+    {
+      src: "/images/framed/otherScoreCard.png",
+      alt: "Image 2",
+      text:  "Once the game begins you can view others scores and update your score.",
+    },
+    {
+      src: "/images/framed/Chat.png",
+      alt: "Image 2",
+      text:  "After the game you can send your fellow golfers a message.",
     },
     // Add more image objects as needed
   ];
@@ -100,7 +120,7 @@ const HomePage = () => {
             <div className="flex justify-center items-center">
               <img src="/images/arrow.png" className="w-20 h-20"></img>
             </div>
-            <div className="flex justify-center h-1/2">
+            <div className="flex justify-center h-1/2 px-10">
               <div>
                 {images.map((image, index) => (
                   <div

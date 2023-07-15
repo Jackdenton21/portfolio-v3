@@ -114,7 +114,7 @@ export default function Home() {
           >
             the world&rsquo;s largest company
           </a>
-           {" "}(by revenue).
+           {" "}by revenue.
         </motion.p>
         <motion.p
           initial="hidden"
@@ -123,7 +123,7 @@ export default function Home() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mb-5 px-10"
         >
-          &emsp;&emsp;&emsp;These experiences have allowed me to see many different aspects of software development. My front-end experience is mostly with React and Node.js. 
+          &emsp;&emsp;&emsp;These experiences have allowed me to see many different sides of software development. My front-end experience is mostly with React and Node.js. 
           My recent back-end work has been with SpringBoot, Kafka, and Cassandra. For more
           details take a look at my &nbsp;
           <a

@@ -17,7 +17,7 @@ export default function Home() {
               Jack Denton
             </h1>
             <p className="mt-2 text-xl text-slate-600">
-              Full-stack Software Engineer
+              Full-Stack Software Engineer
             </p>
           </div>
 
