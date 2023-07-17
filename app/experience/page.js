@@ -71,9 +71,9 @@ const WorkExperiencePage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
-                Updating various systems to process and save additional data for
-                all prescription pharmacy items as required by the Supply Chain
-                Safety Act that comes into place Nov. 2023.
+                Updating various applications to accommodate additional data for
+                all prescription pharmacy items, in compliance with the Supply
+                Chain Safety Act that comes into effect November 2023.
               </motion.li>
 
               <motion.li
@@ -82,18 +82,8 @@ const WorkExperiencePage = () => {
                 transition={{ duration: 0.6, delay: 0.7 }}
                 style={{ marginTop: "1rem" }}
               >
-                Working with large scale systems — 189Mn Rx units processed and
-                shipped annually.
-              </motion.li>
-            
-              <motion.li
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.8 }}
-                style={{ marginTop: "1rem" }}
-              >
-                Technologies involved include Spring Boot, Kafka, CassandraDB
-                (NoSQL), and Google BigQuery.
+                Working with large-scale systems, processing 189 million
+                prescription units annually.
               </motion.li>
 
               <motion.li
@@ -102,7 +92,29 @@ const WorkExperiencePage = () => {
                 transition={{ duration: 0.6, delay: 0.8 }}
                 style={{ marginTop: "1rem" }}
               >
-               Using Offset Explorer to manage Kafka clusters and KafkaSender to send mock messages.
+                Developing event listeners and data mapping methods in Spring
+                Boot.
+              </motion.li>
+
+              <motion.li
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
+                style={{ marginTop: "1rem" }}
+              >
+                Utilizing Offset Explorer to efficiently manage Kafka clusters
+                and KafkaSender to send mock messages for testing and
+                validation.
+              </motion.li>
+
+              <motion.li
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.9 }}
+                style={{ marginTop: "1rem" }}
+              >
+                Enabling data indexing from Cassandra to Elasticsearch, ensuring
+                seamless long-term data storage and retrieval capabilities.
               </motion.li>
             </ul>
           </div>
