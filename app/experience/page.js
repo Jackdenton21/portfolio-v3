@@ -71,9 +71,7 @@ const WorkExperiencePage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
-                Updating various applications to accommodate additional data for
-                all prescription pharmacy items, in compliance with the Supply
-                Chain Safety Act that comes into effect November 2023.
+                Updated a Spring Boot application to process and save additional data for all prescription pharmacy items as required by the Drug Supply Chain Security Act that comes into effect in November 2023.
               </motion.li>
 
               <motion.li
@@ -82,8 +80,7 @@ const WorkExperiencePage = () => {
                 transition={{ duration: 0.6, delay: 0.7 }}
                 style={{ marginTop: "1rem" }}
               >
-                Working with large-scale systems, processing 189 million
-                prescription units annually.
+                Leveraged Kafka listeners to efficiently ingest a high volume of data, with subsequent processing and mapping to a Cassandra database.
               </motion.li>
 
               <motion.li
@@ -92,8 +89,7 @@ const WorkExperiencePage = () => {
                 transition={{ duration: 0.6, delay: 0.8 }}
                 style={{ marginTop: "1rem" }}
               >
-                Developing event listeners and data mapping methods in Spring
-                Boot.
+                Utilized Offset Explorer to manage Kafka clusters and KafkaSender to send mock messages for testing and validation.
               </motion.li>
 
               <motion.li
@@ -102,19 +98,7 @@ const WorkExperiencePage = () => {
                 transition={{ duration: 0.6, delay: 0.8 }}
                 style={{ marginTop: "1rem" }}
               >
-                Utilizing Offset Explorer to efficiently manage Kafka clusters
-                and KafkaSender to send mock messages for testing and
-                validation.
-              </motion.li>
-
-              <motion.li
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.9 }}
-                style={{ marginTop: "1rem" }}
-              >
-                Enabling data indexing from Cassandra to Elasticsearch, ensuring
-                seamless long-term data storage and retrieval capabilities.
+                Implemented data indexing from Cassandra to Elasticsearch, ensuring seamless long-term data storage and retrieval capabilities.
               </motion.li>
             </ul>
           </div>
