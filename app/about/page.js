@@ -92,7 +92,7 @@ export default function Home() {
         >
           &emsp;&emsp;I&rsquo;m currently heading into my fourth and final year
           studying Computer Science at McGill University. Over the past few summers, I&rsquo;ve had the
-          opportunity to apply my theoretical background at a diverse set of organizations, ranging from an
+          opportunity to work at a diverse set of organizations, ranging from an
           &nbsp;
           <a
             href="https://droga5.com"
@@ -123,8 +123,8 @@ export default function Home() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mb-5 px-10"
         >
-          &emsp;&emsp;&emsp;These experiences have allowed me to see many different sides of software development. My front-end experience is mostly with React and Node.js. 
-          My recent back-end work has been with SpringBoot, Kafka, and Cassandra. For more
+          &emsp;&emsp;&emsp;These experiences have allowed me to see many different sides of software development. My front-end experience is mostly with React. 
+          Meanwhile, on the back-end, my recent work has been with SpringBoot, Kafka, and Cassandra. For more
           details take a look at my &nbsp;
           <a
             href="/projects"
@@ -132,6 +132,14 @@ export default function Home() {
           >
             projects
           </a>
+          &nbsp;and&nbsp;
+          <a
+            href="/experience"
+            className="hover:text-gray-400 border-b-2 border-gray-400 mb-1"
+          >
+            experiences
+          </a>
+
           . Below are some of the technologies I&rsquo;ve worked with.
         </motion.p>
       </div>
