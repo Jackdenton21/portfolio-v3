@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <nav className="mt-1 text-sm font-bold">
+    <nav className="mt-1">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap justify-center sm:justify-between  h-16">
           <div className="flex">

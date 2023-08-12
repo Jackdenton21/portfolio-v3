@@ -71,7 +71,7 @@ export default function Home() {
       >
         <div className="container mx-auto px-4 pb-3 text-center">
           <motion.h1
-            className="text-xl font-bold text-slate-700"
+            className="text-xl   text-slate-700"
             layoutId="pageTitle"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -146,7 +146,7 @@ export default function Home() {
       <div>
         {sections.map((section, index) => (
           <section key={index} className="mt-8">
-            <h2 className="text-center text-slate-700 mb-10 font-bold">
+            <h2 className="text-center text-slate-700 mb-10  ">
               <em>{section.title}</em>
             </h2>
             <div

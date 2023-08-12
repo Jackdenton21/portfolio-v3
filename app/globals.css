@@ -6,7 +6,7 @@
 
 /* Add this rule to apply the font to all elements */
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 /* Add any other global CSS styles you may have */

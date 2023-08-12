@@ -23,7 +23,7 @@ const WorkExperiencePage = () => {
       >
         <div className="container mx-auto px-4 text-center">
           <motion.h1
-            className="text-xl font-bold"
+            className="text-xl"
             layoutId="pageTitle"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}

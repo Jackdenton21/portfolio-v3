@@ -62,7 +62,7 @@ const HomePage = () => {
       <Navbar />
 
       <div className="container mx-auto px-4 pt-8 text-center">
-        <h1 className="text-xl font-bold text-slate-700">
+        <h1 className="text-xl   text-slate-700">
           <em>Projects</em>
         </h1>
       </div>
@@ -70,7 +70,7 @@ const HomePage = () => {
       <div className="mb-10">
         <div className="flex mb-5 mt-10">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-xl font-bold lg:hidden">
+            <h1 className="text-xl   lg:hidden">
               Golf Social Media App
             </h1>
             <h2 className="text-m sm:mb-10 lg:hidden">
@@ -84,7 +84,7 @@ const HomePage = () => {
             <div className="flex">
               <div className="h-1/2">
                 <div className="container mx-auto px-4 text-center">
-                  <h1 className="text-xl font-bold hidden lg:block">
+                  <h1 className="text-xl   hidden lg:block">
                     Golf Social Media App
                   </h1>
                   <h2 className="text-m mb-5 sm:mb-10 hidden lg:block">
@@ -153,7 +153,7 @@ const HomePage = () => {
 
         <div className="flex mb-5">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-xl font-bold mb-5 sm:mb-10 lg:hidden">
+            <h1 className="text-xl   mb-5 sm:mb-10 lg:hidden">
               Productivity Enhancing Chrome Extension
             </h1>
           </div>
@@ -161,7 +161,7 @@ const HomePage = () => {
 
         <div className="flex-row sm:flex md:pw-10 mb-20">
           <div className="container mx-auto px-4">
-            <h1 className="text-xl font-bold mb-5 hidden lg:block text-center">
+            <h1 className="text-xl   mb-5 hidden lg:block text-center">
               Productivity Enhancing Chrome Extension
             </h1>
 
@@ -197,7 +197,7 @@ const HomePage = () => {
 
         <div className="flex mb-5">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-xl font-bold mb-5 sm:mb-10 lg:hidden">
+            <h1 className="text-xl   mb-5 sm:mb-10 lg:hidden">
               CPU Implementation with <em>Logism</em>
             </h1>
           </div>
@@ -205,7 +205,7 @@ const HomePage = () => {
 
         <div className="flex-row sm:flex md:pw-10 mb-10">
           <div className="container mx-auto px-4">
-            <h1 className="text-xl font-bold sm:mb-10 hidden lg:block text-center">
+            <h1 className="text-xl   sm:mb-10 hidden lg:block text-center">
               CPU Implementation with <em>Logism</em>{" "}
             </h1>
 

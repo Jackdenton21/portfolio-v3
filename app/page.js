@@ -5,6 +5,7 @@ import "./animation.scss";
 
 export default function Home() {
   return (
+
     <div className="min-h-screen">
       <Navbar />
       <header className="py-10">

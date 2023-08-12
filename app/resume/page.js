@@ -8,10 +8,10 @@ export default function Home() {
       <Navbar />
 
       <div className="flex items-center justify-center mt-10">
-        <div className="my-100 text-xl font-bold">
+        <div className="my-100 text-xl  ">
           <a
             href="../Resume6.pdf"
-            className="text-slate-700 font-bold pt-16 px-4"
+            className="text-slate-700   pt-16 px-4"
           >
             <em>Click To View Resume</em>
           </a>
