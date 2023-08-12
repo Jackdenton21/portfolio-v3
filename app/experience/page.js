@@ -71,8 +71,7 @@ const WorkExperiencePage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
-                Updated a Spring Boot application to process and save additional data for all prescription pharmacy items as required by the Drug Supply Chain Security Act that comes into effect in November 2023.
-              </motion.li>
+Worked with the Pharmacy team on various compliance initiatives in response to the Drug Supply Chain Security Act set to take effect in November 2023.              </motion.li>
 
               <motion.li
                 initial={{ opacity: 0, y: 20 }}
@@ -80,8 +79,7 @@ const WorkExperiencePage = () => {
                 transition={{ duration: 0.6, delay: 0.7 }}
                 style={{ marginTop: "1rem" }}
               >
-                Leveraged Kafka listeners to efficiently ingest a high volume of data, with subsequent processing and mapping to a Cassandra database.
-              </motion.li>
+Built a SpringBoot application to process and save a new industry standard structure of shared data to Cassandra and Elasticsearch, allowing visibility for research or audit.              </motion.li>
 
               <motion.li
                 initial={{ opacity: 0, y: 20 }}
@@ -89,8 +87,7 @@ const WorkExperiencePage = () => {
                 transition={{ duration: 0.6, delay: 0.8 }}
                 style={{ marginTop: "1rem" }}
               >
-                Utilized Offset Explorer to manage Kafka clusters and KafkaSender to send mock messages for testing and validation.
-              </motion.li>
+Utilized Kafka for data streaming as well as Offset Explorer to manage Kafka clusters and KafkaSender to send mock messages for testing and validation.              </motion.li>
 
               <motion.li
                 initial={{ opacity: 0, y: 20 }}
@@ -98,8 +95,7 @@ const WorkExperiencePage = () => {
                 transition={{ duration: 0.6, delay: 0.8 }}
                 style={{ marginTop: "1rem" }}
               >
-                Implemented data indexing from Cassandra to Elasticsearch, ensuring seamless long-term data storage and retrieval capabilities.
-              </motion.li>
+Made enhancements to the Inventory UI (React) to include compliance-related data. Integrated new fields into existing features such as filtering, sorting, and exporting results. Used feature flags to limit my changes to the Pharmacy market.              </motion.li>
             </ul>
           </div>
         </section>
