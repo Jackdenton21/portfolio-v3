@@ -97,7 +97,7 @@ const HomePage = () => {
                     <li>
                       Developed a Golf social media app that supports image
                       sharing, messaging, and public or private game creation.
-                      The cross-platform application aims to strengthen
+                      The cross-platform application can help you strengthen
                       connections with existing contacts and discover new golf
                       partners.
                     </li>
