@@ -173,8 +173,10 @@ const HomePage = () => {
                   highlighted words. The tool is built with the user experience
                   in mind, as it displays the result in a pop-up bubble next to
                   the user&rsquo;s cursor so there is no need to open a new tab
-                  or press any keys. The extension is powered by the OpenAI API,
-                  DBPedia, and DictionaryAPI.dev.
+                  or press any keys. 
+                </li>
+                <li>
+                Integrated OpenAI API, DBPedia, and DictionaryAPI.dev to deliver accurate and reliable results
                 </li>
                 <li>
                 Recognized with the Best Use of Modern Technology award at the McGill 2022 CodeJam Hackathon.
