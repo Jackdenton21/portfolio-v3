@@ -177,7 +177,7 @@ const HomePage = () => {
                   DBPedia, and DictionaryAPI.dev.
                 </li>
                 <li>
-                  Won best use of modern technology at McGill 2022 CodeJam();
+                Recognized with the "Best Use of Modern Technology" award at the McGill 2022 CodeJam Hackathon.
                 </li>
               </ul>
             </div>

@@ -71,7 +71,10 @@ const WorkExperiencePage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
-Worked with the Pharmacy team on various compliance initiatives in response to the Drug Supply Chain Security Act set to take effect in November 2023.              </motion.li>
+                Worked with the Pharmacy team on various compliance initiatives
+                in response to the Drug Supply Chain Security Act set to take
+                effect in November 2023.{" "}
+              </motion.li>
 
               <motion.li
                 initial={{ opacity: 0, y: 20 }}
@@ -79,7 +82,8 @@ Worked with the Pharmacy team on various compliance initiatives in response to t
                 transition={{ duration: 0.6, delay: 0.7 }}
                 style={{ marginTop: "1rem" }}
               >
-Built a SpringBoot application to process and save a new industry standard structure of shared data to Cassandra and Elasticsearch, allowing visibility for research or audit.              </motion.li>
+                Built a SpringBoot application to process and save over 189 million data points to Cassandra and Elasticsearch, allowing visibility for research or audit.{" "}
+              </motion.li>
 
               <motion.li
                 initial={{ opacity: 0, y: 20 }}
@@ -87,7 +91,10 @@ Built a SpringBoot application to process and save a new industry standard struc
                 transition={{ duration: 0.6, delay: 0.8 }}
                 style={{ marginTop: "1rem" }}
               >
-Utilized Kafka for data streaming as well as Offset Explorer to manage Kafka clusters and KafkaSender to send mock messages for testing and validation.              </motion.li>
+                Utilized Kafka for data streaming as well as Offset Explorer to
+                manage Kafka clusters and KafkaSender to send mock messages for
+                testing and validation.{" "}
+              </motion.li>
 
               <motion.li
                 initial={{ opacity: 0, y: 20 }}
@@ -95,7 +102,8 @@ Utilized Kafka for data streaming as well as Offset Explorer to manage Kafka clu
                 transition={{ duration: 0.6, delay: 0.8 }}
                 style={{ marginTop: "1rem" }}
               >
-Made enhancements to the Inventory UI (React) to include compliance-related data. Integrated new fields into existing features such as filtering, sorting, and exporting results. Used feature flags to limit my changes to the Pharmacy market.              </motion.li>
+                Made enhancements to the Inventory UI (React) to include compliance-related data. Integrated new fields into existing features such as filtering, sorting, and exporting results. Boosted development velocity by 50% by enabling continuous deployment of features through feature flags.{" "}
+              </motion.li>
             </ul>
           </div>
         </section>
@@ -143,17 +151,8 @@ Made enhancements to the Inventory UI (React) to include compliance-related data
                 transition={{ duration: 0.6, delay: 0.7 }}
                 style={{ marginTop: "1rem" }}
               >
-                Integrated the MapBox GL JS API to create a visually compelling
-                representation of the data.
-              </motion.li>
-              <motion.li
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.8 }}
-                style={{ marginTop: "1rem" }}
-              >
-                Utilized GitHub for effective version control and project
-                management.
+                Integrated the MapBox GL JS API to create an interactive
+                representation of where the networks are deployed.
               </motion.li>
             </ul>
           </div>
