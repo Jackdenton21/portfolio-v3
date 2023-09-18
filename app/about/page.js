@@ -100,14 +100,14 @@ export default function Home() {
           >
             industry-leading advertising agency
           </a>
-          &ensp; to a &ensp;
+          &ensp;to a&ensp;
           <a
             href="https://www.techforgoodinc.org"
             className="hover:text-gray-400 border-b-2 border-gray-400 mb-1"
           >
             fast-paced startup
           </a>
-          &ensp;and even &ensp;
+          &ensp;and even&ensp;
           <a
             href="https://tech.walmart.com/content/walmart-global-tech/en_us/about.html"
             className="hover:text-gray-400 border-b-2 border-gray-400 mb-1"
@@ -131,9 +131,9 @@ export default function Home() {
             href="/projects"
             className="hover:text-gray-400 border-b-2 border-gray-400 mb-1"
           >
-            personal projects
+          personal projects
           </a>
-          &ensp; and &ensp;
+          &ensp;and&ensp;
           <a
             href="/experience"
             className="hover:text-gray-400 border-b-2 border-gray-400 mb-1"
