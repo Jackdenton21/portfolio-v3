@@ -123,14 +123,7 @@ export default function Home() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mb-5 px-10"
         >
-          &emsp;&emsp;&emsp;These &nbsp;
-          <a
-            href="/experience"
-            className="hover:text-gray-400 border-b-2 border-gray-400 mb-1"
-          >
-            experiences
-          </a>
-          &nbsp;  have enabled me to take on various roles and observe how different companies carry out the software development lifecycle. My front-end expertise lies in building React applications.
+          &emsp;&emsp;&emsp; My front-end expertise lies in building React applications.
           On the back-end, my recent work has been with SpringBoot,
           Kafka, and Cassandra. For more details take a look at my &nbsp;
           <a
