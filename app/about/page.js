@@ -130,7 +130,15 @@ export default function Home() {
             href="/projects"
             className="hover:text-gray-400 border-b-2 border-gray-400 mb-1"
           >
-            projects
+            personal projects
+          </a>
+          and 
+          &nbsp;
+          <a
+            href="/experience"
+            className="hover:text-gray-400 border-b-2 border-gray-400 mb-1"
+          >
+           work experiences
           </a>
           . Below are some of the technologies I&rsquo;ve worked with.
         </motion.p>
