@@ -93,28 +93,28 @@ export default function Home() {
           &ensp;&ensp;I&rsquo;m currently heading into my fourth and final year
           studying Computer Science at McGill University. Over the past few
           summers, I&rsquo;ve had the opportunity to work at a diverse set of
-          organizations, ranging from an &nbsp;
+          organizations, ranging from an &ensp;
           <a
             href="https://droga5.com"
             className="hover:text-gray-400 border-b-2 border-gray-400 mb-1"
           >
             industry-leading advertising agency
           </a>
-          &nbsp; to a &nbsp;
+          &ensp; to a &ensp;
           <a
             href="https://www.techforgoodinc.org"
             className="hover:text-gray-400 border-b-2 border-gray-400 mb-1"
           >
             fast-paced startup
           </a>
-          &nbsp;and even &nbsp;
+          &ensp;and even &ensp;
           <a
             href="https://tech.walmart.com/content/walmart-global-tech/en_us/about.html"
             className="hover:text-gray-400 border-b-2 border-gray-400 mb-1"
           >
             the world&rsquo;s largest company
           </a>
-          &nbsp;by revenue.
+          &ensp;by revenue.
         </motion.p>
         <motion.p
           initial="hidden"
@@ -126,14 +126,14 @@ export default function Home() {
           &ensp;&ensp;My front-end expertise lies in building React
           applications. On the back-end, my recent work has been with
           SpringBoot, Kafka, and Cassandra. For more details take a look at my
-          &nbsp;
+          &ensp;
           <a
             href="/projects"
             className="hover:text-gray-400 border-b-2 border-gray-400 mb-1"
           >
             personal projects
           </a>
-          &nbsp; and &nbsp;
+          &ensp; and &ensp;
           <a
             href="/experience"
             className="hover:text-gray-400 border-b-2 border-gray-400 mb-1"
