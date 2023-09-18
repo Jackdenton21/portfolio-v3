@@ -123,24 +123,33 @@ export default function Home() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mb-5 px-10"
         >
-          &emsp;&emsp;&emsp; My front-end expertise lies in building React applications.
-          On the back-end, my recent work has been with SpringBoot,
-          Kafka, and Cassandra. For more details take a look at my &nbsp;
+          &emsp;&emsp;My front-end expertise lies in building React
+          applications. On the back-end, my recent work has been with
+          SpringBoot, Kafka, and Cassandra. For more details take a look at my
+          &nbsp;
           <a
             href="/projects"
             className="hover:text-gray-400 border-b-2 border-gray-400 mb-1"
           >
             personal projects
           </a>
-          and 
-          &nbsp;
+          &nbsp; and &nbsp;
           <a
             href="/experience"
             className="hover:text-gray-400 border-b-2 border-gray-400 mb-1"
           >
-           work experiences
+            work experiences
           </a>
-          . Below are some of the technologies I&rsquo;ve worked with.
+          .
+        </motion.p>
+        <motion.p
+          initial="hidden"
+          animate="visible"
+          variants={paragraphVariants}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="mb-5 px-10"
+        >
+          &emsp;&emsp;Below are some of the technologies I&rsquo;ve worked with.
         </motion.p>
       </div>
 
