@@ -56,7 +56,7 @@ const WorkExperiencePage = () => {
               Walmart Global Tech
             </motion.h2>
             <p className="text-center mb-2">Software Engineer Intern</p>
-            <p className="text-center">May 2023 - Present</p>
+            <p className="text-center">May 2023 - August 2023</p>
           </div>
           <div className="flex-1 ml-4">
             <ul
@@ -102,7 +102,7 @@ const WorkExperiencePage = () => {
                 transition={{ duration: 0.6, delay: 0.8 }}
                 style={{ marginTop: "1rem" }}
               >
-                Made enhancements to the Inventory UI (React) to include compliance-related data. Integrated new fields into existing features such as filtering, sorting, and exporting results. Boosted development velocity by 50% by enabling continuous deployment of features through feature flags.{" "}
+                Made enhancements to the Inventory UI (React) to include compliance-related data. Integrated new fields into existing features such as filtering, sorting, and exporting results.{" "}
               </motion.li>
             </ul>
           </div>
