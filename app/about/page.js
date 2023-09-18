@@ -90,7 +90,7 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           className="mb-5 px-10"
         >
-          &emsp;&emsp;I&rsquo;m currently heading into my fourth and final year
+          &ensp;&ensp;I&rsquo;m currently heading into my fourth and final year
           studying Computer Science at McGill University. Over the past few
           summers, I&rsquo;ve had the opportunity to work at a diverse set of
           organizations, ranging from an &nbsp;
@@ -123,7 +123,7 @@ export default function Home() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mb-5 px-10"
         >
-          &emsp;&emsp;My front-end expertise lies in building React
+          &ensp;&ensp;My front-end expertise lies in building React
           applications. On the back-end, my recent work has been with
           SpringBoot, Kafka, and Cassandra. For more details take a look at my
           &nbsp;
@@ -149,7 +149,7 @@ export default function Home() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mb-5 px-10"
         >
-          &emsp;&emsp;Below are some of the technologies I&rsquo;ve worked with.
+          &ensp;&ensp;Below are some of the technologies I&rsquo;ve worked with.
         </motion.p>
       </div>
 
